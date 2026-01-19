@@ -1,0 +1,12 @@
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# --- Flask/Environment ---
+.env
+instance/
+
+# --- OS Specific ---
+.DS_Store
