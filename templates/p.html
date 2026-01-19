@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ pokemon["name"] | capitalize }}</title>
+</head>
+<body>
+    <h1>#{{ pokemon["id"] }} - {{ pokemon["name"] | capitalize }}</h1>
+    
+    <img src="{{ pokemon['sprite_url'] }}" alt="{{ pokemon['name'] }}" style="width:200px;">
+
+    <h3>Stats:</h3>
+    <ul>
+        <li>Type: {{ pokemon["type1"] }} {% if pokemon["type2"] %} / {{ pokemon["type2"] }} {% endif %}</li>
+        <li>HP: {{ pokemon["hp"] }}</li>
+        <li>Attack: {{ pokemon["attack"] }}</li>
+        <li>Defense: {{ pokemon["defense"] }}</li>
+    </ul>
+</body>
+</html>

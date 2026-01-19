@@ -6,6 +6,9 @@
     <title>Pokemon</title>
 </head>
 <body>
-    {{pokemons}}
+  {% for pokemon in pokemons %}
+ <a href="/id/{{pokemon["id"]}}">{{pokemon["name"]}}</a>
+<br>
+ {% endfor %}
 </body>
 </html>
